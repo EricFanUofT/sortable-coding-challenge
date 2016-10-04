@@ -7,11 +7,11 @@ The program product_matching.java contains four methods:
 * public static void matching(FileWriter fw, LinkedList<Product> products_list, LinkedList<Listing> listings_list)
 * public static void main(String[] args)
 
-**_parse_products(FileReader fr)_** reads and parses the JSON objects from an input data source (i.e., "products.txt") line by line, and saves the result in a list of newly defined Product objects
+**_parse_products(FileReader fr)_** reads and parses the JSON objects from an input data source (i.e., "products.txt") line by line, and saves the result in a list of Product objects
 
-**_parse_listings(FileReader fr)_** reads and parses the JSON objects from another input data source (i.e., "listings.txt"), and saves the result in a list of newly defined Listing objects
+**_parse_listings(FileReader fr)_** reads and parses the JSON objects from another input data source (i.e., "listings.txt"), and saves the result in a list of Listing objects
 
-**_public static void matching(FileWriter fw, LinkedList\<Product\> products_list, LinkedList\<Listing\> listings_list)_** iterates through the entire list of Product objects and find all the matching Listing objects.  For a Listing object to match a Product object, the following criteria are used:
+**_public static void matching(FileWriter fw, LinkedList\<Product\> products_list, LinkedList\<Listing\> listings_list)_** iterates through the entire list of Product objects and finds all the matching Listing objects.  For a Listing object to match a Product object, the following criteria are used:
 * the manufacturer must be the same
 * the Listing title must contain the Product family (if one is given) and the Product model
 * if the word "accessory" or "accessories" is in the Listing title, make sure it comes after the model
